@@ -23,11 +23,11 @@ Partial Class viewSubmissions
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Label1 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
+        txtName = New TextBox()
+        txtEmail = New TextBox()
+        txtPhoneNumber = New TextBox()
+        txtGitHubRepo = New TextBox()
+        txtStopwatch = New TextBox()
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
@@ -46,45 +46,50 @@ Partial Class viewSubmissions
         Label1.TabIndex = 0
         Label1.Text = "Aalekh Prasad, Slidely Task 2 - View Submissons"
         ' 
-        ' TextBox1
+        ' txtName
         ' 
-        TextBox1.BackColor = SystemColors.ActiveBorder
-        TextBox1.Location = New Point(314, 94)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(301, 29)
-        TextBox1.TabIndex = 1
+        txtName.BackColor = SystemColors.ActiveBorder
+        txtName.Location = New Point(314, 94)
+        txtName.Name = "txtName"
+        txtName.ReadOnly = True
+        txtName.Size = New Size(301, 29)
+        txtName.TabIndex = 1
         ' 
-        ' TextBox2
+        ' txtEmail
         ' 
-        TextBox2.BackColor = SystemColors.ActiveBorder
-        TextBox2.Location = New Point(314, 150)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(301, 29)
-        TextBox2.TabIndex = 2
+        txtEmail.BackColor = SystemColors.ActiveBorder
+        txtEmail.Location = New Point(314, 150)
+        txtEmail.Name = "txtEmail"
+        txtEmail.ReadOnly = True
+        txtEmail.Size = New Size(301, 29)
+        txtEmail.TabIndex = 2
         ' 
-        ' TextBox3
+        ' txtPhoneNumber
         ' 
-        TextBox3.BackColor = SystemColors.ActiveBorder
-        TextBox3.Location = New Point(314, 206)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(301, 29)
-        TextBox3.TabIndex = 3
+        txtPhoneNumber.BackColor = SystemColors.ActiveBorder
+        txtPhoneNumber.Location = New Point(314, 206)
+        txtPhoneNumber.Name = "txtPhoneNumber"
+        txtPhoneNumber.ReadOnly = True
+        txtPhoneNumber.Size = New Size(301, 29)
+        txtPhoneNumber.TabIndex = 3
         ' 
-        ' TextBox4
+        ' txtGitHubRepo
         ' 
-        TextBox4.BackColor = SystemColors.ActiveBorder
-        TextBox4.Location = New Point(314, 262)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(301, 29)
-        TextBox4.TabIndex = 4
+        txtGitHubRepo.BackColor = SystemColors.ActiveBorder
+        txtGitHubRepo.Location = New Point(314, 262)
+        txtGitHubRepo.Name = "txtGitHubRepo"
+        txtGitHubRepo.ReadOnly = True
+        txtGitHubRepo.Size = New Size(301, 29)
+        txtGitHubRepo.TabIndex = 4
         ' 
-        ' TextBox5
+        ' txtStopwatch
         ' 
-        TextBox5.BackColor = SystemColors.ActiveBorder
-        TextBox5.Location = New Point(314, 318)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(301, 29)
-        TextBox5.TabIndex = 5
+        txtStopwatch.BackColor = SystemColors.ActiveBorder
+        txtStopwatch.Location = New Point(314, 318)
+        txtStopwatch.Name = "txtStopwatch"
+        txtStopwatch.ReadOnly = True
+        txtStopwatch.Size = New Size(301, 29)
+        txtStopwatch.TabIndex = 5
         ' 
         ' Label2
         ' 
@@ -164,11 +169,11 @@ Partial Class viewSubmissions
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
-        Controls.Add(TextBox5)
-        Controls.Add(TextBox4)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(txtStopwatch)
+        Controls.Add(txtGitHubRepo)
+        Controls.Add(txtPhoneNumber)
+        Controls.Add(txtEmail)
+        Controls.Add(txtName)
         Controls.Add(Label1)
         Name = "viewSubmissions"
         Text = "viewSubmissions"
@@ -177,11 +182,11 @@ Partial Class viewSubmissions
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtPhoneNumber As TextBox
+    Friend WithEvents txtGitHubRepo As TextBox
+    Friend WithEvents txtStopwatch As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label

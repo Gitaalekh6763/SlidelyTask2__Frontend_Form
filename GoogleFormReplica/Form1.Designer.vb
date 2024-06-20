@@ -65,6 +65,7 @@ Partial Class Form1
         Controls.Add(btnCreateSubmission)
         Controls.Add(btnViewSubmissions)
         Controls.Add(Label1)
+        KeyPreview = True
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)

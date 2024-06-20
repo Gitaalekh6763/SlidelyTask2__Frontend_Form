@@ -22,8 +22,8 @@ Partial Class createSubmission
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        btnNext = New Button()
-        btnPrevious = New Button()
+        btnSubmit = New Button()
+        btnToggle = New Button()
         Label5 = New Label()
         Label4 = New Label()
         Label3 = New Label()
@@ -33,28 +33,28 @@ Partial Class createSubmission
         txtEmail = New TextBox()
         txtName = New TextBox()
         Label1 = New Label()
-        TextBox5 = New TextBox()
+        lblStopWatch = New TextBox()
         SuspendLayout()
         ' 
-        ' btnNext
+        ' btnSubmit
         ' 
-        btnNext.BackColor = SystemColors.ActiveCaption
-        btnNext.Location = New Point(160, 446)
-        btnNext.Name = "btnNext"
-        btnNext.Size = New Size(476, 60)
-        btnNext.TabIndex = 25
-        btnNext.Text = "SUBMIT (CTRL + S)"
-        btnNext.UseVisualStyleBackColor = False
+        btnSubmit.BackColor = SystemColors.ActiveCaption
+        btnSubmit.Location = New Point(160, 446)
+        btnSubmit.Name = "btnSubmit"
+        btnSubmit.Size = New Size(476, 60)
+        btnSubmit.TabIndex = 25
+        btnSubmit.Text = "SUBMIT (CTRL + S)"
+        btnSubmit.UseVisualStyleBackColor = False
         ' 
-        ' btnPrevious
+        ' btnToggle
         ' 
-        btnPrevious.BackColor = Color.Gold
-        btnPrevious.Location = New Point(172, 377)
-        btnPrevious.Name = "btnPrevious"
-        btnPrevious.Size = New Size(261, 43)
-        btnPrevious.TabIndex = 24
-        btnPrevious.Text = "TOGGLE STOPWATCH (CTRL + T)"
-        btnPrevious.UseVisualStyleBackColor = False
+        btnToggle.BackColor = Color.Gold
+        btnToggle.Location = New Point(172, 377)
+        btnToggle.Name = "btnToggle"
+        btnToggle.Size = New Size(261, 43)
+        btnToggle.TabIndex = 24
+        btnToggle.Text = "TOGGLE STOPWATCH (CTRL + T)"
+        btnToggle.UseVisualStyleBackColor = False
         ' 
         ' Label5
         ' 
@@ -133,23 +133,23 @@ Partial Class createSubmission
         Label1.TabIndex = 13
         Label1.Text = "Aalekh Prasad, Slidely Task 2 - Create Submisson"
         ' 
-        ' TextBox5
+        ' lblStopWatch
         ' 
-        TextBox5.BackColor = SystemColors.ActiveBorder
-        TextBox5.Location = New Point(439, 385)
-        TextBox5.Name = "TextBox5"
-        TextBox5.ReadOnly = True
-        TextBox5.Size = New Size(137, 29)
-        TextBox5.TabIndex = 26
+        lblStopWatch.BackColor = SystemColors.ActiveBorder
+        lblStopWatch.Location = New Point(439, 385)
+        lblStopWatch.Name = "lblStopWatch"
+        lblStopWatch.ReadOnly = True
+        lblStopWatch.Size = New Size(137, 29)
+        lblStopWatch.TabIndex = 26
         ' 
         ' createSubmission
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 662)
-        Controls.Add(TextBox5)
-        Controls.Add(btnNext)
-        Controls.Add(btnPrevious)
+        Controls.Add(lblStopWatch)
+        Controls.Add(btnSubmit)
+        Controls.Add(btnToggle)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
@@ -159,14 +159,15 @@ Partial Class createSubmission
         Controls.Add(txtEmail)
         Controls.Add(txtName)
         Controls.Add(Label1)
+        KeyPreview = True
         Name = "createSubmission"
         Text = "createSubmission"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents btnNext As Button
-    Friend WithEvents btnPrevious As Button
+    Friend WithEvents btnSubmit As Button
+    Friend WithEvents btnToggle As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
@@ -176,5 +177,5 @@ Partial Class createSubmission
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtName As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents lblStopWatch As TextBox
 End Class
