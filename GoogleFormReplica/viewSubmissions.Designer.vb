@@ -35,6 +35,11 @@ Partial Class viewSubmissions
         Label6 = New Label()
         btnPrevious = New Button()
         btnNext = New Button()
+        btnDelete = New Button()
+        btnEdit = New Button()
+        btnUpdate = New Button()
+        txtSearch = New TextBox()
+        btnSearch = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -49,7 +54,7 @@ Partial Class viewSubmissions
         ' txtName
         ' 
         txtName.BackColor = SystemColors.ActiveBorder
-        txtName.Location = New Point(314, 94)
+        txtName.Location = New Point(311, 140)
         txtName.Name = "txtName"
         txtName.ReadOnly = True
         txtName.Size = New Size(301, 29)
@@ -58,7 +63,7 @@ Partial Class viewSubmissions
         ' txtEmail
         ' 
         txtEmail.BackColor = SystemColors.ActiveBorder
-        txtEmail.Location = New Point(314, 150)
+        txtEmail.Location = New Point(311, 196)
         txtEmail.Name = "txtEmail"
         txtEmail.ReadOnly = True
         txtEmail.Size = New Size(301, 29)
@@ -67,7 +72,7 @@ Partial Class viewSubmissions
         ' txtPhoneNumber
         ' 
         txtPhoneNumber.BackColor = SystemColors.ActiveBorder
-        txtPhoneNumber.Location = New Point(314, 206)
+        txtPhoneNumber.Location = New Point(311, 252)
         txtPhoneNumber.Name = "txtPhoneNumber"
         txtPhoneNumber.ReadOnly = True
         txtPhoneNumber.Size = New Size(301, 29)
@@ -76,7 +81,7 @@ Partial Class viewSubmissions
         ' txtGitHubRepo
         ' 
         txtGitHubRepo.BackColor = SystemColors.ActiveBorder
-        txtGitHubRepo.Location = New Point(314, 262)
+        txtGitHubRepo.Location = New Point(311, 308)
         txtGitHubRepo.Name = "txtGitHubRepo"
         txtGitHubRepo.ReadOnly = True
         txtGitHubRepo.Size = New Size(301, 29)
@@ -85,7 +90,7 @@ Partial Class viewSubmissions
         ' txtStopwatch
         ' 
         txtStopwatch.BackColor = SystemColors.ActiveBorder
-        txtStopwatch.Location = New Point(314, 318)
+        txtStopwatch.Location = New Point(311, 364)
         txtStopwatch.Name = "txtStopwatch"
         txtStopwatch.ReadOnly = True
         txtStopwatch.Size = New Size(301, 29)
@@ -94,7 +99,7 @@ Partial Class viewSubmissions
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(185, 88)
+        Label2.Location = New Point(182, 134)
         Label2.Name = "Label2"
         Label2.Size = New Size(52, 21)
         Label2.TabIndex = 6
@@ -103,7 +108,7 @@ Partial Class viewSubmissions
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(185, 150)
+        Label3.Location = New Point(182, 196)
         Label3.Name = "Label3"
         Label3.Size = New Size(48, 21)
         Label3.TabIndex = 7
@@ -112,7 +117,7 @@ Partial Class viewSubmissions
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(185, 206)
+        Label4.Location = New Point(182, 252)
         Label4.Name = "Label4"
         Label4.Size = New Size(93, 21)
         Label4.TabIndex = 8
@@ -121,7 +126,7 @@ Partial Class viewSubmissions
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(185, 262)
+        Label5.Location = New Point(182, 308)
         Label5.Name = "Label5"
         Label5.Size = New Size(94, 42)
         Label5.TabIndex = 9
@@ -130,7 +135,7 @@ Partial Class viewSubmissions
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(185, 318)
+        Label6.Location = New Point(182, 364)
         Label6.Name = "Label6"
         Label6.Size = New Size(82, 42)
         Label6.TabIndex = 10
@@ -140,7 +145,7 @@ Partial Class viewSubmissions
         ' btnPrevious
         ' 
         btnPrevious.BackColor = Color.Gold
-        btnPrevious.Location = New Point(94, 422)
+        btnPrevious.Location = New Point(91, 468)
         btnPrevious.Name = "btnPrevious"
         btnPrevious.Size = New Size(278, 60)
         btnPrevious.TabIndex = 11
@@ -150,18 +155,71 @@ Partial Class viewSubmissions
         ' btnNext
         ' 
         btnNext.BackColor = SystemColors.ActiveCaption
-        btnNext.Location = New Point(394, 422)
+        btnNext.Location = New Point(391, 468)
         btnNext.Name = "btnNext"
         btnNext.Size = New Size(278, 60)
         btnNext.TabIndex = 12
         btnNext.Text = "NEXT (CTRL + N)"
         btnNext.UseVisualStyleBackColor = False
         ' 
+        ' btnDelete
+        ' 
+        btnDelete.BackColor = Color.Red
+        btnDelete.Location = New Point(690, 110)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(63, 38)
+        btnDelete.TabIndex = 13
+        btnDelete.Text = "Delete"
+        btnDelete.UseVisualStyleBackColor = False
+        ' 
+        ' btnEdit
+        ' 
+        btnEdit.BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(0))
+        btnEdit.Location = New Point(219, 426)
+        btnEdit.Name = "btnEdit"
+        btnEdit.Size = New Size(83, 33)
+        btnEdit.TabIndex = 14
+        btnEdit.Text = "Edit"
+        btnEdit.UseVisualStyleBackColor = False
+        ' 
+        ' btnUpdate
+        ' 
+        btnUpdate.BackColor = SystemColors.GradientActiveCaption
+        btnUpdate.Location = New Point(465, 429)
+        btnUpdate.Name = "btnUpdate"
+        btnUpdate.Size = New Size(102, 33)
+        btnUpdate.TabIndex = 15
+        btnUpdate.Text = "Update"
+        btnUpdate.UseVisualStyleBackColor = False
+        ' 
+        ' txtSearch
+        ' 
+        txtSearch.BackColor = Color.Bisque
+        txtSearch.Location = New Point(229, 77)
+        txtSearch.Name = "txtSearch"
+        txtSearch.Size = New Size(264, 29)
+        txtSearch.TabIndex = 16
+        ' 
+        ' btnSearch
+        ' 
+        btnSearch.BackColor = Color.Salmon
+        btnSearch.Location = New Point(504, 77)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(128, 33)
+        btnSearch.TabIndex = 17
+        btnSearch.Text = "Search by Email"
+        btnSearch.UseVisualStyleBackColor = False
+        ' 
         ' viewSubmissions
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 557)
+        Controls.Add(btnSearch)
+        Controls.Add(txtSearch)
+        Controls.Add(btnUpdate)
+        Controls.Add(btnEdit)
+        Controls.Add(btnDelete)
         Controls.Add(btnNext)
         Controls.Add(btnPrevious)
         Controls.Add(Label6)
@@ -175,6 +233,7 @@ Partial Class viewSubmissions
         Controls.Add(txtEmail)
         Controls.Add(txtName)
         Controls.Add(Label1)
+        KeyPreview = True
         Name = "viewSubmissions"
         Text = "viewSubmissions"
         ResumeLayout(False)
@@ -194,4 +253,9 @@ Partial Class viewSubmissions
     Friend WithEvents Label6 As Label
     Friend WithEvents btnPrevious As Button
     Friend WithEvents btnNext As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnEdit As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents btnSearch As Button
 End Class

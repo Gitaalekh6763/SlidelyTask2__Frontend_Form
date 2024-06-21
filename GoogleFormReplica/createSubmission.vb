@@ -54,4 +54,8 @@ Public Class createSubmission
         End If
     End Sub
 
+    Private Sub createSubmission_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        stopwatch.Start()
+        UpdateStopwatchLabel()
+    End Sub
 End Class
